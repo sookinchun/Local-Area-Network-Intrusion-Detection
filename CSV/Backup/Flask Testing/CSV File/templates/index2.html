@@ -1,0 +1,20 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+	  
+	  
+	  
+<button id="myButton" class="float-left submit-button" >READ</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "http://localhost:5000/read";
+    };
+</script>
+
+   </body>
+</html>

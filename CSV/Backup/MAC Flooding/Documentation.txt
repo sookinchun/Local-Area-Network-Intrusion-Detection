@@ -1,0 +1,4 @@
+T Shark Feature Extract Command
+For Normal Traffic and MAC Flooding
+tshark -r MAC_Flooding.pcapng -T fields -E header=y -E separator=, -E quote=d -E occurrence=f -e ip.src -e ip.dst -e eth.addr -e eth.dst -e frame.time_relative -e frame.time_delta > MAC_Flooding_attack.csv
+

@@ -1,0 +1,43 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+	<h3>Comparison Score for Selection Model </h3>
+	<h1> <div class="grid-item">{{ data }}</div>
+	<h3>Accuracy for Model Comparison:</h3>
+	<img class="grid-item" src={{ comparison_uri }}></img>
+	<br>
+	<h3>Accuracy for Test Dataset:</h3>
+	<div class="grid-item">{{ data2 }}</div>
+	<br>
+	<h3>Confusion Matrix for Test Dataset:</h3>
+	<img class="grid-item" src={{ data3 }}></img>
+	<br>
+	<br>
+	<h3>Classification Report for Test Dataset</h3>
+	<div class="grid-item">{{ data4 }}</div>
+	<br>
+	<h3>Heatmap for Classification Report</h3>
+	<img class="grid-item" src={{ data8 }}></img>
+	</h1>
+
+
+
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+

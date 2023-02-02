@@ -1,0 +1,77 @@
+<html>
+<style>
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+</style>
+    <body bgcolor=#FFFFFFF>
+
+        <center>
+		
+        <h1> Network Intrusion Detection </h1>
+		
+
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<ul class="mySelection">
+		<label for="attack" id="attack">Choose an Attack:</label>		
+		<select name="attack" id="model", form="deploy">
+		  <option value="mac" >MAC Flooding Attack</option>
+		  <option value="dhcp">DHCP Spoofing</option>
+		  <option value="icmp">ICMP DoS Attack</option>
+		  <option value="syn">SYN ACK DoS Attack</option>
+		</select>
+		</ul>
+
+		<ul class="mySelection">
+		<label for="model">Choose a Model:</label>		
+		<select name="model" id="model", form="deploy">
+		  <option value="lr">Logistic Regression</option>
+		  <option value="lda">Linear Discriminant Analysis</option>
+		  <option value="knn">K Nearest Neighbors</option>
+		  <option value="dt">Decision Tree Classifier</option>
+
+		</select>
+		</ul>
+
+		<ul class="mySelection">
+		<label for="ratio">Choose a Training Ratio:</label>		
+		<select name="ratio" id="ratio", form="deploy">
+		  <option value="ratio70">70% Training Data : 30% Testing Data</option>
+		  <option value="ratio80">80% Training Data : 20% Testing Data</option>
+
+		</select>
+		</ul>
+
+		<ul class="mySelection">
+		<label for="dataset">Choose a Dataset:</label>		
+		<select name="dataset" id="dataset", form="deploy">
+		  <option value="mac_dataset">Master_MAC_Attack.csv</option>
+		  <option value="syn_dataset">Master_SYN_Attack.csv</option>
+		  <option value="dhcp_dataset">Master_Spoofing_Attack.csv</option>
+		  <option value="icmp_dataset">Master_ICMP_Attack.csv</option>
+
+		</select>
+		</ul>
+		
+		<form method="POST", action="{{url_for('deploy')}}", id="deploy">
+		 <input type="submit" , value='predict!' >
+		</form>
+
+        <img src='static\background.jpg' alt="kinchun_background">
+		
+		</div>
+    </center>
+
+    </body>
+	
+</html>
+
